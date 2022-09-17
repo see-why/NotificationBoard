@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Inters&display=swap);
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  padding: 0 20% 0% 20%;
+  background-color: #d3d3d3;
+  width: 250px;
+}
+
+.Notification-container {
+  background-color: #ffffff;
+  padding: 1%;
+}
+
+.padding {
+  padding: 2%;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.03em;
+}
+
+h1, h2 {
+  color: #1F4286;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  background: linear-gradient(180deg, #DCE7F5 46.15%, #BBCEEB 49.94%);
+  border: 1px solid #9FBBE4;
+  margin: 0px 0px 5px 0px;
+  padding-left: 1%;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #020202;
+
+}
+
+section {
+  border: 2px solid #9FBBE4;
+  padding: 0 1% 5% 1%;
+}
+
+.no-border-top {
+  border-top: none;
+}
+
+.no-border-bottom {
+  border-bottom: none;
+}
