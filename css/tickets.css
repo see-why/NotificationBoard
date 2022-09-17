@@ -1,0 +1,27 @@
+.maintenance {
+  border-bottom: 2px solid #9FBBE4;
+  padding-bottom: 13px;
+}
+
+.maintenance-bottom {
+  border-bottom-color: #ffffff;
+  padding-bottom: 0px;
+}
+
+.full-text {
+  display: none;
+}
+
+header {
+  display: flex;
+}
+
+img {
+  height: 4px;
+  width: 8px;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+}
