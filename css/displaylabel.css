@@ -1,6 +1,6 @@
 ul {
   margin: 0px;
-  padding-left: 13px;
+  padding-left: 15px;
 }
 
 li {
@@ -20,7 +20,7 @@ li.green {
   color: #20C130;
 }
 
-div.maintenance > p {
+div.maintenance > p, div.incident > p {
   font-weight: 700;
   font-size: 11px;
   line-height: 13px;

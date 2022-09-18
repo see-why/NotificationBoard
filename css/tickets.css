@@ -1,9 +1,9 @@
-.maintenance {
+.maintenance, .incident {
   border-bottom: 2px solid #9FBBE4;
   padding-bottom: 13px;
 }
 
-.maintenance-bottom {
+.maintenance-bottom, .incident-bottom {
   border-bottom-color: #ffffff;
   padding-bottom: 0px;
 }
