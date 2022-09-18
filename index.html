@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Notification Board: Home page</title>
+<link rel="stylesheet" href="css/homepage.css" />
+<link rel="stylesheet" href="css/statusbar.css" />
+<link rel="stylesheet" href="css/displaylabel.css" />
+<link rel="stylesheet" href="css/tickets.css" />
+<script src="scripts/index.js"></script>
+</head>
+<body>
+    <div class="Notification-container">
+        <h1>Notifications</h1>
+        <section class="no-border-bottom">
+            <div>
+                <h2>Core Banking System Performances</h2>
+                <div>
+                    <h3>Transaction Uptime</h3>
+                    <div class="status-bar-group">
+                        <div class="status-bar-container"><div class="status-bar"></div></div><label class="percentage">80%</label>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <section class="no-border-bottom">
+            <div>
+                <h2>Channels System Performance</h2>
+                <div>
+                    <h3>Inward Transfer: Providus</h3>
+                    <div class="status-bar-group">
+                        <div class="status-bar-container"><div class="status-bar-providus"></div></div><label class="percentage">40%</label>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <section class="no-border-bottom">
+            <div>
+                <h2>Settlement Bank Balance Status:</h2>
+                <ul>
+                    <li>LOW</li>
+                </ul>
+            </div>
+        </section>
+        <section class="no-border-bottom">
+            <div>
+                <h2>EOD status:</h2>
+                <ul>
+                    <li class="green">ACTIVE</li>
+                </ul>
+                <p>Last Date & Time of EOD: 09:00 20/10/2010</p>
+                <p>EOD Running Duration: 3hrs</p>
+            </div>
+        </section>
+        <section class="no-border-bottom">
+            <div>
+                <h2>Error During EOD:</h2>
+                <ul>
+                    <li>Trial balance due to Imbalance.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="no-border-bottom">
+            <div>
+                <h2>EOD Aware:</h2>
+                <ul>
+                    <li class="green">ACTIVE</li>
+                </ul>
+            </div>
+        </section>
+        <section class="no-border-bottom">
+            <div>
+                <h2>Business Status:</h2>
+                <ul>
+                    <li class="green">OPEN</li>
+                </ul>
+            </div>
+        </section>
+        <section class="no-border-bottom">
+            <p>Your subscription has been renewed.</p>
+            <p>Your SMS unit is running low, we recommend you top up.</p>
+        </section>
+        <section class="no-border-bottom">
+            <header>
+                <h2>Maintenance Notification</h2>
+                <img id="maintenance-notification-img" src="./images/arrow_up.png" alt="toggle collapse" onclick="toggleMaintenceTicketsCollapse()">
+            </header>
+            
+            <div class="maintenance-tickets" id="maintenance-tickets">
+                <div class="maintenance">
+                    <p>5 hours ago</p>
+                    <p>Dear Customer,</p>
+                    <p class="partial-text">Kindly be informed we will be carrying out an emergency maintenance on our server...</p>
+                    <p class="full-text">
+                        Kindly be informed we will be carrying out an emergency maintenance on our server, 
+                        This is a downtime statement or message for test.
+                        Affected services: Outward Transfers (NIBSS) and Outward Transfers (Interswitch)
+                    </p>
+                </div>
+                <div class="maintenance-bottom no-padding-bottom maintenance">
+                    <p>4 hours ago</p>
+                    <p>Dear Customer,</p>
+                    <p class="partial-text">Kindly be informed we will be carrying out an emergency maintenance on our server...</p>
+                    <p class="full-text">
+                        Kindly be informed we will be carrying out an emergency maintenance on our server, 
+                        This is a downtime statement or message for test.
+                        Affected services: Outward Transfers (NIBSS) and Outward Transfers (Interswitch)
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h2>Incident Notification</h2>
+                <img id="incident-notification-img" src="./images/arrow_up.png" alt="toggle collapse" onclick="toggleIncidentTicketsCollapse()">
+            </header>
+            <div class="incident-tickets" id="incident-tickets">
+                <div class="incident">
+                    <p>5 hours ago</p>
+                    <p>Dear Customer,</p>
+                    <p class="partial-text">We are currently experiencing downtime with you current services with Providus...</p>
+                    <p class="full-text">
+                        We are currently experiencing downtime with you current services with Providus, 
+                        This is a downtime statement or message for test.
+                        Affected services: Providus Transfers (NIBSS) and Providus Transfers (Interswitch)
+                    </p>
+                </div>
+                <div class="incident-bottom no-padding-bottom incident">
+                    <p>4 hours ago</p>
+                    <p>Dear Customer,</p>
+                    <p class="partial-text">We are currently experiencing downtime with you current services with Stanbic...</p>
+                    <p class="full-text">
+                        We are currently experiencing downtime with you current services with Providus..., 
+                        This is a downtime statement or message for test.
+                        Affected services: Stanbic Transfers (NIBSS) and Stanbic Transfers (Interswitch)
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+ul {
+  margin: 0px;
+  padding-left: 15px;
+}
+
+li {
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: -0.03em;
+  color: #E00E0E;
+}
+
+P {
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+
+li.green {
+  color: #20C130;
+}
+
+div.maintenance > p, div.incident > p {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: -0.03em;
+  color: #6E7A8D;
+}

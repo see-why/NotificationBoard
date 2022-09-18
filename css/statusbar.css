@@ -1,0 +1,34 @@
+.status-bar-container {
+  width: 170px;
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+  border: 1px solid #9FBBE4;
+  margin-right: 10px;
+}
+
+.status-bar-providus {
+  background: #ffff00;
+  width: 80px;
+}
+
+.status-bar {
+  background: #20C130;
+  width: 150px;
+}
+
+.status-bar, .status-bar-container, .status-bar-providus {
+  height: 21.02px;
+}
+
+.status-bar-group {
+  display: flex;
+  align-items: center;
+}
+
+.percentage {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.03em;
+  color: #1F4286;
+}
