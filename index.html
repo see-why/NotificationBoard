@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="css/statusbar.css" />
 <link rel="stylesheet" href="css/displaylabel.css" />
 <link rel="stylesheet" href="css/tickets.css" />
+<link rel="stylesheet" href="css/modal.css" />
 <script src="scripts/index.js"></script>
 </head>
 <body>
@@ -87,7 +88,7 @@
             </header>
             
             <div class="maintenance-tickets" id="maintenance-tickets">
-                <div class="maintenance">
+                <div class="maintenance" onclick="openModal()">
                     <p>5 hours ago</p>
                     <p>Dear Customer,</p>
                     <p class="partial-text">Kindly be informed we will be carrying out an emergency maintenance on our server...</p>
@@ -97,7 +98,7 @@
                         Affected services: Outward Transfers (NIBSS) and Outward Transfers (Interswitch)
                     </p>
                 </div>
-                <div class="maintenance-bottom no-padding-bottom maintenance">
+                <div class="maintenance-bottom no-padding-bottom maintenance" onclick="openModal()">
                     <p>4 hours ago</p>
                     <p>Dear Customer,</p>
                     <p class="partial-text">Kindly be informed we will be carrying out an emergency maintenance on our server...</p>
@@ -115,7 +116,7 @@
                 <img id="incident-notification-img" src="./images/arrow_up.png" alt="toggle collapse" onclick="toggleIncidentTicketsCollapse()">
             </header>
             <div class="incident-tickets" id="incident-tickets">
-                <div class="incident">
+                <div class="incident" onclick="openModal()">
                     <p>5 hours ago</p>
                     <p>Dear Customer,</p>
                     <p class="partial-text">We are currently experiencing downtime with you current services with Providus...</p>
@@ -125,7 +126,7 @@
                         Affected services: Providus Transfers (NIBSS) and Providus Transfers (Interswitch)
                     </p>
                 </div>
-                <div class="incident-bottom no-padding-bottom incident">
+                <div class="incident-bottom no-padding-bottom incident" onclick="openModal()">
                     <p>4 hours ago</p>
                     <p>Dear Customer,</p>
                     <p class="partial-text">We are currently experiencing downtime with you current services with Stanbic...</p>
@@ -135,6 +136,24 @@
                         Affected services: Stanbic Transfers (NIBSS) and Stanbic Transfers (Interswitch)
                     </p>
                 </div>
+            </div>
+        </section>
+        <section class="modal-pop-up" id="modal-pop-up">
+            <header>
+                <h2 class="pop-up-h2">Maintenance Notification</h2>
+                <img id="pop-up-notification-img" class="pop-up-notification-img" src="./images/close.png" alt="close pop-up" onclick="closeModal()">
+            </header>
+            <div class="pop-up-message">
+                <p>Dear Customer,</p>
+                <p>Kindly be informed, we will be carrying out an emergency maintenance on our servers.</p>
+                <p>Find below the details of the maintenance:</p>
+                <p>Date: 31st May 2022 (Tuesday)</p>
+                <p>Duration / Time: 15 minutes (12:55pm - 1:10pm)</p>
+                <p>                    
+                    Please note that there will be possible service disruptions on ALL transactions within this
+                    maintenance period.
+                </p> 
+                <p class="modal-bottom">Best Regards.</p>
             </div>
         </section>
     </div>

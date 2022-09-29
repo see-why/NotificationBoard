@@ -26,4 +26,5 @@ div.maintenance > p, div.incident > p {
   line-height: 13px;
   letter-spacing: -0.03em;
   color: #6E7A8D;
+  cursor: pointer;
 }

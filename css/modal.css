@@ -1,0 +1,48 @@
+.modal-pop-up {
+  position: fixed;
+  width: 243px;
+  left: 40%;
+  top: 30%;
+  padding: 0px;
+  display: none;
+
+  background: #FFFFFF;
+  border: 2px solid #1C2537;
+}
+
+.modal-pop-up > header {
+  background: linear-gradient(180deg, #36435C 46.15%, #1C2536 49.94%);
+  border: 1px solid #1F4286;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.pop-up-h2 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.03em;
+}
+
+.pop-up-notification-img {
+  width: 10px;
+  height: 10px;
+}
+
+.pop-up-message {
+  padding: 1% 2% 1% 2%;
+}
+
+.pop-up-message > p {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: -0.03em;
+
+  color: #6E7A8D;
+}
+
+.modal-bottom {
+  margin-bottom: 1em;
+}

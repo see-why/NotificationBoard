@@ -19,6 +19,12 @@ header {
 img {
   height: 4px;
   width: 8px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+img:active {
+  transform: scale(2.0);
 }
 
 header {

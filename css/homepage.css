@@ -3,14 +3,16 @@
 body {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  padding: 0 20% 0% 20%;
   background-color: #d3d3d3;
-  width: 250px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .Notification-container {
   background-color: #ffffff;
   padding: 1%;
+  width: 250px;
+  justify-self: baseline;
 }
 
 .padding {
