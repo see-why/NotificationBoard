@@ -23,11 +23,11 @@ var toggleIncidentTicketsCollapse = () => {
 }
 
 var closeModal = () => {
-  container = document.getElementById("modal-pop-up")
+  var container = document.getElementById("modal-pop-up")
   container.style.display = "none"
 }
 
 var openModal = () => {
-  container = document.getElementById("modal-pop-up")
+  var container = document.getElementById("modal-pop-up")
   container.style.display = "block"
 }
