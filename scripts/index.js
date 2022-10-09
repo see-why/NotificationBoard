@@ -23,11 +23,28 @@ var toggleIncidentTicketsCollapse = () => {
 }
 
 var closeModal = () => {
-  container = document.getElementById("modal-pop-up")
+  var container = document.getElementById("modal-pop-up")
   container.style.display = "none"
 }
 
-var openModal = () => {
-  container = document.getElementById("modal-pop-up")
+var openModal = (e) => {
+  console.log(e.classList)
+  var classes = e.classList
+  var h2 = document.getElementById("pop-up-h2")
+  var pop_up_message_container = document.getElementById("pop-up-message")
+  pop_up_message_container.innerHTML = ''
+  pop_up_message_container.innerHTML += "<br/>Dear Customer, <br/><br/>"
+
+  if (classes.contains("incident")) {
+      h2.innerText = "Incident Notification"
+      
+  } else {
+      h2.innerText = "Maintenance Notification"
+      pop_up_message_container.innerHTML += "Kindly be informed, we will be carrying out an emergency maintenance on our servers.<br/> <br/>"
+  }
+
+  var container = document.getElementById("modal-pop-up")
+  
+  pop_up_message_container.innerHTML += e.children[3].innerHTML
   container.style.display = "block"
 }
