@@ -43,7 +43,7 @@ var openModal = (e) => {
       pop_up_message_container.innerHTML += "Kindly be informed, we will be carrying out an emergency maintenance on our servers.<br/> <br/>"
   }
 
-  var container = document.getElementById("modal_pop_up")
+  var container = document.getElementById("modal-pop-up")
   
   pop_up_message_container.innerHTML += e.children[3].innerHTML
   container.style.display = "block"
