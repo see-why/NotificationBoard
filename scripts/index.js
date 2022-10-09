@@ -30,7 +30,7 @@ var closeModal = () => {
 var openModal = (e) => {
   console.log(e.classList)
   var classes = e.classList
-  var h2 = document.getElementById("modal-header")
+  var h2 = document.getElementById("pop-up-h2")
   var pop_up_message_container = document.getElementById("pop-up-message")
   pop_up_message_container.innerHTML = ''
   pop_up_message_container.innerHTML += "<br/>Dear Customer, <br/><br/>"
