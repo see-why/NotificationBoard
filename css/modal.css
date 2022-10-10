@@ -30,14 +30,16 @@
   height: 10px;
 }
 
+.pop-up-message, .pop-up-message > p {
+  font-size: 11px;
+}
+
 .pop-up-message {
   padding: 1% 2% 1% 2%;
-  font-size: 11px;
 }
 
 .pop-up-message > p {
   font-weight: 400;
-  font-size: 11px;
   line-height: 13px;
   letter-spacing: -0.03em;
 
