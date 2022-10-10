@@ -89,23 +89,27 @@
             
             <div class="maintenance-tickets" id="maintenance-tickets">
                 <div class="maintenance" onclick="openModal(this)">
+                    <p>4 hours ago</p>
+                    <p>Dear Customer,</p>
+                    <p class="partial-text  margin-bottom">Kindly be informed we will be carrying out an emergency maintenance on our server...</p>
+                    <p class="full-text">
+                        Find below the details of the maintenance: <br /><br />
+                        Date: 31st May 2022 (Tuesday) <br /><br />
+                        Duration / Time: 15 minutes (12:55pm - 1:10pm) <br /><br />
+                        Please note that there will be possible service disruptions on ALL transactions within this maintenance period. <br /><br />
+                        Best Regards. <br /><br />
+                    </p>
+                </div>
+                <div class="maintenance-bottom no-padding-bottom maintenance" onclick="openModal(this)">
                     <p>5 hours ago</p>
                     <p>Dear Customer,</p>
                     <p class="partial-text">Kindly be informed we will be carrying out an emergency maintenance on our server...</p>
                     <p class="full-text">
-                        Kindly be informed we will be carrying out an emergency maintenance on our server, 
-                        This is a downtime statement or message for test.
-                        Affected services: Outward Transfers (NIBSS) and Outward Transfers (Interswitch)
-                    </p>
-                </div>
-                <div class="maintenance-bottom no-padding-bottom maintenance" onclick="openModal(this)">
-                    <p>4 hours ago</p>
-                    <p>Dear Customer,</p>
-                    <p class="partial-text">Kindly be informed we will be carrying out an emergency maintenance on our server...</p>
-                    <p class="full-text">
-                        Kindly be informed we will be carrying out an emergency maintenance on our server, 
-                        This is a downtime statement or message for test.
-                        Affected services: Outward Transfers (NIBSS) and Outward Transfers (Interswitch)
+                            Find below the details of the maintenance: <br /><br />
+                            Date: 31st May 2022 (Tuesday) <br /><br />
+                            Duration / Time: 15 minutes (12:55pm - 1:10pm) <br /><br />
+                            Please note that there will be possible service disruptions on ALL transactions within this maintenance period. <br /><br />
+                            Best Regards. <br /><br />
                     </p>
                 </div>
             </div>
@@ -117,45 +121,43 @@
             </header>
             <div class="incident-tickets" id="incident-tickets">
                 <div class="incident" onclick="openModal(this)">
-                    <p>5 hours ago</p>
+                    <p>4 hours ago</p>
                     <p>Dear Customer,</p>
-                    <p class="partial-text">We are currently experiencing downtime with you current services with Providus...</p>
+                    <p class="partial-text  margin-bottom">We are currently experiencing downtime with you current services with Providus...</p>
                     <p class="full-text">
-                        We are currently experiencing downtime with you current services with Providus, 
-                        This is a downtime statement or message for test.
-                        Affected services: Providus Transfers (NIBSS) and Providus Transfers (Interswitch)
+                        We are currently experiencing downtime with your current services with Providus <br /><br />
+                        Origin: Not on Us <br/><br/>
+                        Affected Resources: No Resources Affected <br/><br/>
+                        This is a downtime statement or message for test. <br /><br />
+                        Affected services: Providus Transfers (NIBSS) and Providus Transfers (Interswitch) <br /><br />
+                        This is only a Service Flunctuation <br /><br />
                     </p>
                 </div>
                 <div class="incident-bottom no-padding-bottom incident" onclick="openModal(this)">
-                    <p>4 hours ago</p>
+                    <p>5 hours ago</p>
                     <p>Dear Customer,</p>
                     <p class="partial-text">We are currently experiencing downtime with you current services with Stanbic...</p>
                     <p class="full-text">
-                        We are currently experiencing downtime with you current services with Providus..., 
-                        This is a downtime statement or message for test.
-                        Affected services: Stanbic Transfers (NIBSS) and Stanbic Transfers (Interswitch)
+                        We are currently experiencing downtime with your current services with Stanbic <br/><br/>
+                        Origin: Not on Us <br/><br/>
+                        Affected Resources: No Resources Affected <br/><br/>
+                        This is a downtime statement or message for test. <br /><br />
+                        Affected services: Stanbic Transfers (NIBSS) and Stanbic Transfers (Interswitch) <br /><br />
+                        This is only a Service Flunctuation <br /><br />
                     </p>
                 </div>
             </div>
         </section>
         <section class="modal-pop-up" id="modal-pop-up">
-            <header>
+            <header id="modal-header">
                 <h2 class="pop-up-h2" id="pop-up-h2">Maintenance Notification</h2>
                 <img id="pop-up-notification-img" class="pop-up-notification-img" src="./images/close.png" alt="close pop-up" onclick="closeModal()">
             </header>
             <div class="pop-up-message" id="pop-up-message">
-                <p>Dear Customer,</p>
-                <p>Kindly be informed, we will be carrying out an emergency maintenance on our servers.</p>
-                <p>Find below the details of the maintenance:</p>
-                <p>Date: 31st May 2022 (Tuesday)</p>
-                <p>Duration / Time: 15 minutes (12:55pm - 1:10pm)</p>
-                <p>                    
-                    Please note that there will be possible service disruptions on ALL transactions within this
-                    maintenance period.
-                </p> 
-                <p class="modal-bottom">Best Regards.</p>
+              
             </div>
         </section>
     </div>
+    <script src="scripts/drag.js"></script>
 </body>
 </html>
